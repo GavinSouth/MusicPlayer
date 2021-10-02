@@ -1,0 +1,46 @@
+My simple local Spotify™.
+
+Requirements:
+   Write a program in Python that demonstrates the following:
+       √ Variables 
+       √ Expressions
+       √ Conditionals
+       √ Loops
+       √ Functions
+       √ Classes
+       √ Data structures (e.g. list, tuple, dict, or set) or dataframe.
+       
+       Use the Python README.md template.
+       
+       Stretch Challenges (select one):
+       √ Modify your program to read and write from a file.
+
+
+Future:
+   - Search for song be genre or artist name.
+   - Add a song to library.
+   - Display album art.
+   - Intergrate with a SQL database
+   - Edit and update a user
+   - Album art, lyrics, song info? Consider data types in SQL.
+   - Delete or remove songs or users.
+
+
+Music Library how to:
+    # Read
+    music_library = pd.read_csv("music_library.csv")
+    music_library 
+
+    # Note: how to index the library with some notes:
+    music_library.loc[0] # Pulls the index
+    music_library.loc[2]["title"] # Pulls variable
+
+    # Changes variable in df
+    music_library.loc[0, "song_file_name"] = "missed_the_boat_modest_mouse.wav"
+
+    # Indexing
+    selection = music_library.loc[0]
+    selection[2]
+
+    # Write
+    # music_library.to_csv("music_library.csv")
